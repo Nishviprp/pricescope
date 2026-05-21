@@ -4,7 +4,6 @@ import { useState } from "react";
 import ResultsGrid from "@/components/ResultsGrid";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
-import SetupBanner from "@/components/SetupBanner";
 import { CompareResult } from "@/types";
 
 export default function Home() {
@@ -38,7 +37,6 @@ export default function Home() {
   return (
     <main>
       <HeroSection onSearch={handleSearch} loading={loading} />
-      <SetupBanner />
 
       <div className="max-w-4xl mx-auto px-4 py-6">
         {error && (
@@ -57,7 +55,7 @@ export default function Home() {
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🛍️</div>
             <p className="text-lg text-gray-500">Search any product to compare prices</p>
-            <p className="text-sm text-gray-400 mt-2">Powered by Google Gemini AI — 1,500 free searches per day</p>
+            <p className="text-sm text-gray-400 mt-2">Powered by Google Gemini AI — 1,000 free searches per day</p>
           </div>
         )}
         {results && !loading && <ResultsGrid results={results} query={query} />}
