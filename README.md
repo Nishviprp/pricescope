@@ -1,6 +1,8 @@
 # 🔍 PriceScope
 Compare prices across Amazon, Walmart, eBay, BestBuy & Target.
 Built with Next.js + Google Gemini AI.
+Website : https://pricescopes.netlify.app/
+
 ## 📁 Project Structure
 
 ```
